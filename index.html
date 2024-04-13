@@ -7,77 +7,106 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/project-js-noteam/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-js-noteam/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/project-js-noteam/assets/index-4d3b70f6.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
+    <header class="header-section" id="header-section-id">
+  <div class="header container">
+    <ul class="header-list">
+      <li class="header-item">
+        <div class="header__logo">
+          <div class="logo__image">
+            <img
+              class="header_logo_pic"
+              sizes="(min-width: 375px) 343px, (min-width: 768px) 704px, (min-width: 1440px) 680px"
+              src="../img/image-header.jpg"
+              alt="photo"
+            />
+          </div>
+          <a class="logo__text">jefferson*</a>
+        </div>
       </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+      <li class="header-item nav-item header-item2">
+        <div class="navigation__menu">
+          <p class="menu__title">Menu</p>
+          <nav class="header__menu">
+            <ul class="menu__list">
+              <li class="list__item">
+                <a href="#about-me-section-id" class="item__link smooth-scroll"
+                  >About me</a
+                >
+              </li>
+              <li class="list__item">
+                <a href="#benefits-section-id" class="item__link smooth-scroll"
+                  >Benefits</a
+                >
+              </li>
+              <li class="list__item">
+                <a href="#projects-section-id" class="item__link smooth-scroll"
+                  >Projects</a
+                >
+              </li>
+              <li class="list__item">
+                <a href="#faq-section-id" class="item__link smooth-scroll"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </li>
+      <li class="header-item header-item3">
+        <a
+          href="#work-together-section-id"
+          class="navigation-link smooth-scroll"
+          >Order the project</a
+        >
+      </li>
+      <li class="header-item header-item4">
+        <svg class="burger" width="28" height="28">
+          <use href="../icons/sprite.svg#burger-menu"></use>
+        </svg>
       </li>
     </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project-js-noteam/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/project-js-noteam/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
   </div>
-</section>
+
+  <div class="mobile-menu-header">
+    <svg class="close-btn-header" width="28" height="28">
+      <use href="../icons/sprite.svg#x"></use>
+    </svg>
+    <ul class="mobile-menu-header-list">
+      <li class="mobile-menu-item">
+        <a
+          href="#about-me-section-id"
+          class="mobile-menu-item-link smooth-scroll"
+          >About me</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a
+          href="#benefits-section-id"
+          class="mobile-menu-item-link smooth-scroll"
+          >Benefits</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a
+          href="#projects-section-id"
+          class="mobile-menu-item-link smooth-scroll"
+          >Projects</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#faq-section-id" class="mobile-menu-item-link smooth-scroll"
+          >FAQ</a
+        >
+      </li>
+    </ul>
+    <a href="#work-together-section-id" class="link-wt smooth-scroll"
+      >Order the project</a
+    >
+  </div>
+</header>
 
 
     
