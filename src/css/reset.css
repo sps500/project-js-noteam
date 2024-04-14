@@ -100,3 +100,6 @@ html {
 body.lock {
   overflow: hidden;
 }
+.header-section {
+  background-color: #1c1d20;
+}
