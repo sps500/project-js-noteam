@@ -6,8 +6,16 @@
           <div class="logo__image">
             <img
               class="header_logo_pic"
+              srcset="
+                ./img/mobil/m-header-logo.jpg           343w,
+                ./img/tablet/t-header-logo-pic.jpg      704w,
+                ./img/desktop/d-header-logo-pic.jpg     680w,
+                ./img/mobil/m-header-logo@2x.jpg        686w,
+                ./img/tablet/t-header-logo-pic@2x.jpg  1414w,
+                ./img/desktop/d-header-logo-pic@2x.jpg 1360w
+              "
               sizes="(min-width: 375px) 343px, (min-width: 768px) 704px, (min-width: 1440px) 680px"
-              src="./img/image-header.jpg"
+              src="./img/mobil/m-header-logo.jpg"
               alt="photo"
             />
           </div>
@@ -52,7 +60,7 @@
       </li>
       <li class="header-item header-item4">
         <svg class="burger" width="28" height="28">
-          <use href="./icons/sprite.svg#burger-menu"></use>
+          <use href="./icons/sprite.svg#icon-menu-05"></use>
         </svg>
       </li>
     </ul>

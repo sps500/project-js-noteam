@@ -7,13 +7,15 @@ h5,
 h6,
 p {
   margin: 0;
+  margin-bottom: 0;
 }
 
 p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -22,37 +24,12 @@ ul {
 a {
   color: currentColor;
   text-decoration: none;
-}
-
-button {
   cursor: pointer;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-@media screen and (min-width: 375px) {
-  .container {
-    width: 375px;
-    padding: 0 16px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding: 0 32px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-    padding: 0 32px;
-  }
+button,
+input {
+  cursor: pointer;
 }
 
 img {
@@ -99,4 +76,36 @@ html {
 }
 body.lock {
   overflow: hidden;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('../fonts/InterTight-VariableFont_wght.ttf');
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .container {
+    min-width: 320px;
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding: 0 32px;
+  }
 }
